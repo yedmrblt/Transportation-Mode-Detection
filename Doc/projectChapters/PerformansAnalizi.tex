@@ -1,0 +1,13 @@
+\chapter{Performans Analizi}
+
+Yapılan deneylerin sonuçlarından elde edilen analiz aşağıdaki gibidir:
+\begin{itemize}
+    \item Tablo 7.1'de belirtilen 1. güzergaha ait Şekil 7.1'deki uygulama ekran çıktısı incelendiğinde sistem hafif raylı sınıfını metro-marmaray sınıfı ile karıştırmaktadır. Yürüme, tramvay ve araba sınıfları başarılı bir şekilde ayırt edilmektedir.
+    \item Tablo 7.2'de belirtilen 2. güzergaha ait Şekil 7.2'deki uygulama ekran çıktısı incelendiğinde sistem otobüs-metrobüs sınıfını hafif raylı sınıfı ile karıştırmaktadır. Yürüme, metro-marmaray sınıfları başarılı bir şekilde ayırt edilmektedir.
+    \item Yürüme sınıfı en düşük ivmelenmeye sahip olduğu için sistem bu sınıfı diğer sınıflardan kolayca ayırt edebilmektedir.
+    \item Kullanıcı eğer çok yavaş yürürse sistem bu sınıfı ayırt edememektedir ve metro-marmaray sınıfı ile karıştırmaktadır.
+    \item Hafif raylı vasıtasının ortalama hızı metro ve marmaray vasıtalarının ortalama hızına yakın olması sebebiyle sistem hafif raylı ile metro-marmaray sınıflarını birbirine karıştırmaktadır.
+    \item Tramvay sınıfının hızı diğer raylı vasıtalardan daha az olması sebebiyle sistem tarafından bu sınıf kolayca ayırt edilebilmektedir.
+    \item Genel olarak sistem 6 sınıf (araba, yürüme, metro-marmaray, tramvay, hafif raylı, otobüs-metrobüs) içerisinden araba, yürüme, metro-marmaray ve tramvay sınıflarını başarılı bir şekilde ayırt edebilmektedir.
+\end{itemize}
+

@@ -1,0 +1,16 @@
+\chapter{Sonuç}
+
+Yolculuk esnasında kullanıcı ulaşım türü tespiti projesinde, akıllı telefonlarda bulunan ivmeölçer ve jiroskop sensörleri aracılığı ile kullanıcının anlık ulaşım türünün belirlenmesi amaçlanmaktadır. Tespit edilmesi amaçlanan ulaşım türleri araba, metro, marmaray, tramvay, hafif raylı, metrobüs ve otobüsdür. Belirtilen sınıfların sistem tarafından tespit edilebilmesi için makine öğrenmesi teknikleri kullanılmıştır. Herbir ulaşım türüne ait 20 dakikalık eğitim ve 20 dakikalık test verisi toplanmıştır. Toplanan veriler özellik çıkarımı işleminden geçirilmiştir. Özellik çıkarımı işlemi 20 saniye, 40 saniye ve 60 saniyelik pencere aralıkları için gerçekleştirilmiştir. Elde edilen yeni veri setleri makine öğrenmesi algoritmalarından geçirilmiştir. En iyi sonucu 20 saniye pencere aralığına sahip veri seti için \%65 doğruluk oranı ile J48 algoritması vermiştir. Metro - marmaray sınıfı ile otobüs - metrobüs sınıfları birleştirilerek yeni veri setleri oluşturulmuştur. Elde edilen yeni veri setleri test edildiğinde en iyi sonucu 20 saniye pencere aralığına sahip veri seti için \%85 doğruluk oranı ile J48 algoritması vermiştir. J48 algoritmasının oluşturduğu model uygulamaya eklenmiştir. Bu modele ek olarak sistemde elde edilen sonuçların iyileştirilmesi için yeni bir algoritma geliştirilmiştir. Algoritma şu şekildedir: ardışık iki yürüme işlemi arasında yer alan  taşıt bilgilerinden en fazla olan bulunur; aradaki tüm taşıt bilgileri bulunan taşıt bilgisi ile etiketlenir. 
+\\
+\\
+Yapılan deneyler sonucunda tramvay, araba, yürüme, metro-marmaray sınıfları başarılı bir şekilde tespit edilebilmektedir. Otobüs - metrobüs ve hafif raylı sınıflarının tespiti başarılı bir şekilde gerçekleştirilememiştir. Gerçekleştirilen çalışma sonunda başlangıçta belirlenen hedefe büyük ölçüde ulaşılmıştır. Başlangıçta hedef, araba, metro, marmaray, tramvay, hafif raylı, metrobüs ve otobüs olmak üzere 7 farklı ulaşım türünün tespit edilmesiydi. Çalışma sonucunda araba, metro-marmaray, tramvay, hafif raylı ve otobüs-metrobüs olmak üzere 5 farklı ulaşım türü sınıflandırılabilmiştir.
+\\
+\\
+Gelecek çalışmalarda makine öğrenmesinin doğruluk oranının artırılabilmesi adına iki yöntem önerilebilir. Bir tanesi eğitim veri setindeki veri miktarının artırılması. Makine öğrenmesinde ne kadar fazla veri var ise o kadar iyi bir doğruluk oranına sahip olunur. Bu bağlamda farklı kullanıcılar tarafından saatlerce toplanan sensör verileri gelecek çalışmalarda olumlu bir ilerleme sağlayacaktır. 
+\\
+Kullanılan sensör sayısının da artırılması doğruluk oranını artıracaktır. Günümüz akıllı telefonlarında ivmeölçer ve jiroskop sensörlerinin yanında magnetometre de bulunmaktadır. Bu 3 sensörden alınan verilerde doğruluk oranını artıracaktır.
+
+
+
+
+

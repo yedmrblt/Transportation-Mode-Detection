@@ -1,0 +1,58 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%% BU SAYFA ÜZERİNDE OYNAMA YAPMAYINIZ %%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{titlepage}
+    \begin{center}
+    
+        \large
+        
+        \textbf{\country\\ \university \\ \faculty \\ \department}
+    
+        \includegraphics[scale=0.85]{frontPages/ytu_logo.jpg}
+        
+        \vspace*{1.5cm}
+        \Large
+        \parbox[][0.8cm][c]{1.0\textwidth}{
+            \centering
+            \textbf{\titleOfThesis}
+        }
+        
+        \vspace{3cm}
+        
+        \numberi~$-$~\studenti\\ 
+        \ifnum\pdfstrcmp{\studentii}{~}=0
+        ~
+        \else
+        \numberii~$-$~\studentii
+        \fi 
+        \vspace{2cm}
+        
+        \large
+        \textbf{\thesisType}
+
+        
+        \vspace{2cm}
+        
+        \normalsize
+        {\advisorT\\\advisor}
+        
+        \vspace{1.5cm}
+        
+        \large
+        \date
+    \end{center}
+\end{titlepage}
+
+\newpage
+\thispagestyle{empty}
+\par\vspace*{\fill}
+\noindent
+
+\ifnum\lang=0
+\textbf{\footnotesize\centering\textcopyright~All rights reserved to Yıldız Technical University, Computer Engineering Department.}
+\else
+\textbf{\footnotesize\centering\textcopyright~Bu projenin bütün hakları Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği Bölümü’ne aittir.}
+\fi

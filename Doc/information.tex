@@ -1,0 +1,102 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%% Aşağıda istenilen bilgileri dikkatlice doldurunuz.   %%%%%%%%
+%%%%%%%%% Doldurmanız istenilen ifadenin sonunda TR ya da EN   %%%%%%%%
+%%%%%%%%% yazıyorsa, sırasıyla Türkçe veya İngilizce olarak    %%%%%%%%
+%%%%%%%%% doldurunuz. Eğer herhangi bir ifade yoksa, projenizi %%%%%%%%
+%%%%%%%%% hangi dilde yazıyorsanız (Türkçe veya İngilizce), o  %%%%%%%%
+%%%%%%%%% dile göre doldurunuz. İsimleri yazarken soyisimleri  %%%%%%%%
+%%%%%%%%% büyük harf ile yazınız.                              %%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+% Proje başlığını Türkçe olarak yazınız.
+\def\titleTR{ YOLCULUK ESNASINDA KULLANICI ULAŞIM TÜRÜ TESPİTİ }
+
+% Proje başlığını İngilizce olarak yazınız.
+\def\titleEN{ USER TRANSPORTATION MODE DETECTION DURING TRAVEL }
+
+% Proje grubundaki ilk ismi yazınız.
+\def\studenti{Yunus Emre DEMİRBULUT}
+%İlk öğrencinin, öğrenci numarasını yazınız.
+\def\numberi{13011010}
+% Proje grubundaki ilk öğrencinin doğum tarihi ve yerini yazınız.
+\def\studentibdate{28.05.1996, Trabzon}
+% Proje grubundaki ilk öğrencinin e-mail adresini yazınız.
+\def\studentiemail{y.emre.demirbulut@gmail.com}
+% Proje grubundaki ilk öğrencinin cep telefonu numarasını yazınız.
+\def\studentiphone{ 0549 326 20 26}
+% Proje grubundaki ilk öğrencinin staj deneyimlerini yazınız. Satır atlatmak için \\ kullanabilirsiniz.
+\def\studentiintern{ SPEXCO Bilişim Yaz. San.ve Tic. Ltd. Şti.}
+
+% Proje grubundaki ikinci ismi yazınız. Eğer ikinci üye yoksa ~ işareti ekleyiniz ve ikinci
+% öğrenci ile alakalı diğer bilgileri atlayınız.
+\def\studentii{~}
+% Proje grubundaki ilk öğrencinin doğum tarihi ve yerini yazınız.
+\def\studentiibdate{}
+% Proje grubundaki ilk öğrencinin e-mail adresini yazınız.
+\def\studentiiemail{}
+% Proje grubundaki ilk öğrencinin cep telefonu numarasını yazınız.
+\def\studentiiphone{}
+% Proje grubundaki ilk öğrencinin staj deneyimlerini yazınız. Satır atlatmak için \\ kullanabilirsiniz.
+\def\studentiiintern{}
+
+% Projeyi teslim ettiğiniz ay ve yılı proje için kullandığınız dilde yazınız.
+\def\date{Ocak, 2017}
+
+% Proje danışmanınızın ismini Türkçe ünvanı ile yazınız.
+\def\advisorTR{Yrd. Doç. Dr. M. Amaç GÜVENSAN}
+% Proje danışmanınızın ismini İngilizce ünvanı ile yazınız.
+\def\advisorEN{Assist. Prof. Dr. M. Amaç GÜVENSAN}
+
+\def\acknowledgementText{
+Projenin geliştirilme sürecinde bilgi ve tecrübeleriyle bana yol gösteren ve her türlü imkanı sağlayan bölümümüzün değerli hocalarından aynı zamanda proje danışmanım Sayın Yrd.Doç.Dr. M. Amaç Güvensan'a sonsuz teşekkürlerimi sunuyorum.
+\\
+Çalışmalarımda bana moral ve destek veren aynı zamanda anlayış gösteren arkadaşlarıma ve aileme tüm kalbimle teşekkür ederim. 
+}
+
+\def\abstractTextEnglish{
+It is aimed to determine the user's instant transport type through the accelerometer and gyroscope sensors found in smartphones in the user transportation mode detection during the journey project.
+\\
+\\
+To determine the user transportation mode, accelerometer and gyroscope sensor data have been collected at 100 Hz while traveling by car, bus, metrobus, maramaray, metro, tram and light rail from the smartphone of the user. The data has been passed through feature extraction and feature selection processes. Machine learning methods were tested on the dataset. The data were tested in 4 different machine learning algorithms. These algorithms are Naive Bayes, KNN, J48 and Random Forest algorithms. The best result was obtained from J48 algorithm with an accuracy of 85\%.
+\\
+\\
+When the results were examined, it was seen that subway and marmaray, bus and metrobus classes were mixed with each other too much. Subway - marmaray classes and bus - metrobus classes were transformed into a single class. The new data set has been tested with the machine learning algorithm. The best result is the J48 algorithm with an accuracy of 85\%. 
+\\
+\\
+As a result of the study, 5 different types of transportation could be classified as car, subway - marmaray, tramway, light rail and bus - metrobus.
+}
+
+\def\abstractKeywordsEnglish{
+    % Buraya İngilizce olarak proje için geçerli anahtar kelimeleri yazınız
+    Activity Recognation, Transportation Mode Detection, Smartphone
+}
+
+\def\abstractTextTurkish{
+Yolculuk esnasında kullanıcı ulaşım türü tespiti projesinde, akıllı telefonlarda bulunan ivmeölçer ve jiroskop sensörleri aracılığı ile kullanıcının anlık ulaşım türünün belirlenmesi amaçlanmaktadır. 
+\\
+\\
+Kullanıcının ulaşım türünü belirlemek için kullanıcıdan yürürken, araba, otobüs, metrobüs, maramaray, metro, tramvay ve hafif raylı ile seyahat ederken ivmeölçer ve jiroskop algılayıcılarından 100 Hz ile elde edilen veriler toplanmıştır. Veriler özellik çıkarımı ve özellik seçimi işleminden geçirilmiştir. Elde edilen yeni verilere makine öğrenmesi teknikleri kullanılarak testler gerçekleştirilmiştir. Veriler 4 farklı makine öğrenmesi algoritmasında test edilmiştir. Bu algoritmalar Naive Bayes, KNN, J48 ve Random Forest algoritmalarıdır. 
+En iyi sonucu \%65 doğruluk oranı ile J48 algoritması vermiştir. 
+\\
+\\
+Sonuçlar incelendiğinde metro ile marmaray, otobüs ile metrobüs sınıflarının birbiri ile çok fazla karıştırıldığı görülmüştür. Metro - marmaray ikilisi tek bir sınıf, otobüs - metrobüs ikilisi tek bir sınıf haline getirilmiştir. Yeni veri seti makine öğrenmesi algoritmaları ile test edilmiştir. En iyi sonucu \%85 doğruluk oranı ile J48 algoritması vermiştir.
+\\
+\\
+Çalışma sonucunda araba, metro - marmaray, tramvay, hafif raylı ve otobüs - metrobüs olmak üzere 5 farklı ulaşım türü sınıflandırılabilmiştir.
+}
+
+\def\abstractKeywordsTurkish{
+    % Buraya Türkçe olarak proje için geçerli anahtar kelimeleri yazınız
+    Etkinlik Tanıma, Ulaşım Türü Tespiti, Akıllı Telefon
+}
+
+% Proje için gerekli olan sistem ve yazılım bilgilerini yazınız.
+\def\software{ iOS, Swift }
+
+% Proje için gerekli olan RAM bellek boyutunu yazınız.
+\def\memorysize{1GB}
+
+% Proje için gerekli olan harddisk boyutunu yazınız.
+\def\disksize{30 MB}

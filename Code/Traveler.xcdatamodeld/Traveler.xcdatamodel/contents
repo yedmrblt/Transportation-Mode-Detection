@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11542" systemVersion="15G1108" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Buffer" representedClassName="RawPredictionMO" syncable="YES">
+        <attribute name="datetime" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="mode" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="ImprovedPredictions_20" representedClassName="RawPredictionMO" syncable="YES">
+        <attribute name="datetime" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="mode" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="ImprovedPredictions_40" representedClassName="RawPredictionMO" syncable="YES">
+        <attribute name="datetime" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="mode" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="ImprovedPredictions_60" representedClassName="RawPredictionMO" syncable="YES">
+        <attribute name="datetime" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="mode" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="RawPredictions_20" representedClassName="RawPredictionMO" syncable="YES" codeGenerationType="class">
+        <attribute name="datetime" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="mode" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="RawPredictions_40" representedClassName="RawPredictionMO" syncable="YES">
+        <attribute name="datetime" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="mode" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="RawPredictions_60" representedClassName="RawPredictionMO" syncable="YES">
+        <attribute name="datetime" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="mode" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Buffer" positionX="-45" positionY="27" width="128" height="75"/>
+        <element name="ImprovedPredictions_20" positionX="-36" positionY="36" width="128" height="75"/>
+        <element name="ImprovedPredictions_40" positionX="-27" positionY="45" width="128" height="75"/>
+        <element name="ImprovedPredictions_60" positionX="-9" positionY="54" width="128" height="75"/>
+        <element name="RawPredictions_20" positionX="-54" positionY="-9" width="128" height="75"/>
+        <element name="RawPredictions_40" positionX="-54" positionY="9" width="128" height="75"/>
+        <element name="RawPredictions_60" positionX="-45" positionY="27" width="128" height="75"/>
+    </elements>
+</model>

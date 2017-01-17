@@ -1,0 +1,8 @@
+Uygulamanın çalıştırılabilmesi için gerekli adımlar aşağıdaki gibidir.
+
+1. iOS 10 işletim sistemine sahip akıllı telefonu bilgisayara bağlayın.
+2. Run klasörü içerisinde bulunan Traveler.xcodeproj dosyasını XCode ile açın.
+3. XCode içerisinde uygulamanın çalıştırılacak olduğu hedef cihaz olarak bilgisayara bağladığnız cihazı seçin.
+4. XCode içerisinde sol üstteki Run butonuna basın.
+
+Yukarıdaki işlemler sonucunda uygulama telefonunuza yüklenmiş olup ototaikmolarak açılacaktır. Yukarıdaki adımları tek bir sefer için yapmanız yeterlidir.

@@ -1,0 +1,78 @@
+%%%%% Güncelleme Geçmişi
+%%%%% v1.1 -> 10.11.2016 (IOS)
+
+\documentclass[a4paper,12pt,oneside,openany]{book}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%      PROJECT PARAMETERS      %%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Project Option: "computer" or "senior"
+% Report Option: "report" or "final"
+
+% Example:   \usepackage[computer, report]{ytucestyle}
+%            \usepackage[senior, final]{ytucestyle}
+
+\usepackage[computer, final]{ytucestyle}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%         REFERENCES       %%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\addbibresource{references.bib} 
+
+\begin{document}
+\onehalfspacing
+\pagenumbering{roman}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%         FRONT PAGES      %%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input {frontPages/0a-titlePage}
+\input {frontPages/0f-ack}
+\input {frontPages/0g1-tableofcontents}
+% Eğer sembol yoksa aşağıdaki satırın başına yüzde işareti (%) ekleyiniz.
+\input {frontPages/0g2-listofsymbols}
+% Eğer kısaltma yoksa aşağıdaki satırın başına yüzde işareti (%) ekleyiniz.
+\input {frontPages/0g3-listofabbrevations}
+\input {frontPages/0g4-lists}
+\input {frontPages/0h-abstract}
+
+\onehalfspacing
+\clearpage
+\pagenumbering{arabic}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%      CHAPTERS     %%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input {projectChapters/Giris}
+\input {projectChapters/OnInceleme}
+\input {projectChapters/Fizibilite}
+\input {projectChapters/SistemAnalizi}
+\input {projectChapters/SistemTasarimi}
+\input {projectChapters/Uygulama}
+\input {projectChapters/DeneyselSonuclar}
+\input {projectChapters/PerformansAnalizi}
+\input {projectChapters/Sonuc}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%      APPENDICES     %%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage\appendix
+
+%\input {projectChapters/A-appendix}
+%\input {projectChapters/B-appendix}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%         BACK PAGES       %%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\addcontentsline{toc}{chapter}{\bibName}
+\singlespacing
+\printbibliography[title={\bibName}]
+
+\ifnum\final=1
+\newpage
+\input {frontPages/cv}
+\fi
+
+\end{document}

@@ -1,0 +1,38 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%% BU SAYFA ÜZERİNDE OYNAMA YAPMAYINIZ %%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newlength{\mylen}
+\newlength{\tempp}
+\setlength{\tempp}{\cftfignumwidth}
+
+\iffigures
+    \newpage
+    \renewcommand{\figurename}{\figureName}
+    \renewcommand{\cftfigpresnum}{\figurename\enspace}
+    \renewcommand{\cftfigaftersnum}{}
+    \settowidth{\mylen}{\cftfigpresnum\cftfigaftersnum}
+    \addtolength{\cftfignumwidth}{\mylen}
+    
+    \chapter*{\listfigures}
+    \renewcommand\listfigurename{\vspace{-3.2em}}
+    \addcontentsline{toc}{chapter}{\listfigures}
+    \listoffigures
+\fi
+
+\iftables
+    \newpage
+    \renewcommand{\tablename}{\tableName}
+    \renewcommand{\cfttabpresnum}{\tablename\enspace}
+    \renewcommand{\cfttabaftersnum}{}
+    \settowidth{\mylen}{\cfttabpresnum\cfttabaftersnum}
+    \addtolength{\cfttabnumwidth}{\mylen}
+    
+    \chapter*{\listtables}
+    \renewcommand\listtablename{\vspace{-3.2em}}
+    \addcontentsline{toc}{chapter}{\listtables}
+    
+    \listoftables
+\fi
